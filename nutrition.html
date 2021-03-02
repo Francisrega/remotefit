@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RemoteFit Nutrition</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo"> RemoteFit</h2>
+                <div class="toggle"></div>
+            </header>
+            
+            <video src="space2.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Nutrition </h2>
+                <h1>You Are What You Eat</h1>
+                <p>Nutrition is the most important aspect to good health.
+                 Your body is like car. You must properly take care of it, giving it the best quality of gas as fuel. 
+                 The foods you eat will act in the same way.
+                 Below are some healthy foods that will properly fuel your body. </p>
+                <p> Some things to consider, avoid artifically processed and deep fried foods!</p>
+                <p> Keep your sugar consumption at a minimum.
+                    Drink at least 8L of water a day, your skin and organs will thank you!</p>
+                 <table> 
+                     <caption>Healthy Foods! </caption>
+                    <tr>
+                        <th>Protein</th>
+                        <th>Carbohydrates</th>
+                        <th>Fats</th>
+    
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>Rice</td>
+                        <td>Avocado</td>
+                    </tr>
+                    <tr>
+                        <td>Steak</td>
+                        <td>Potatoes</td>
+                        <td>Olive Oil</td>
+                    </tr>
+                    <tr>
+                        <td>Salmon</td>
+                        <td>Oatmeal</td>
+                        <td>Almonds</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>Bread</td>
+                        <td>Peanut Butter</td>
+                    </tr>
+                    <tr>
+                        <td>Protein Powder</td>
+                        <td>Carb Powder</td>
+                        <td>Avocado Oil</td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+
+            <ul class="social">
+                <a href="social-media.html"><img src="instagram.png" alt="" /></a>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

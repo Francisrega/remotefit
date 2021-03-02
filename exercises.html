@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RemoteFit Exercises</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo"> RemoteFit</h2>
+                <div class="toggle"></div>
+            </header>
+            
+            <video src="space2.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Exercises </h2>
+                <p>Exercise will keep the body young, active and strong. The more you exercise and work
+                    the body, hitting all the muscles, the stronger you'll become and the better you'll feel. </p>
+                <p> Some things to consider: </p>
+                <p> Always stretch! Try to exercise every muscle group in the body at least once a week.</p>
+                 <table> 
+                     <caption>Exercise List </caption>
+                    <tr>
+                        <th>Legs</th>
+                        <th>Chest</th>
+                        <th>Back</th>
+                        <th>Shoulders</th>
+                        <th>Arms</th>
+                        <th>Abs</th>
+    
+                    </tr>
+                    <tr>
+                        <td>Squats</td>
+                        <td>Flat Bench Press</td>
+                        <td>Barbell Rows</td>
+                        <td>Overhead Press</td>
+                        <td>Tricep Extension</td>
+                        <td>Crunches</td>
+                    </tr>
+                    <tr>
+                        <td>Leg Press</td>
+                        <td>Incline Bench Press</td>
+                        <td>Machine Pull Down</td>
+                        <td>Side Raises</td>
+                        <td>Bicep Curl</td>
+                        <td>Leg Lifts</td>
+                    </tr>
+                    <tr>
+                        <td>Lunges</td>
+                        <td>Cable Flyes</td>
+                        <td>Deadlifts</td>
+                        <td>Front Raise</td>
+                        <td>Tricep Skull Crushers</td>
+                        <td>Seated Reverse Crunches</td>
+                    </tr>
+                    <tr>
+                        <td>Hip Thrusts</td>
+                        <td>Pullover</td>
+                        <td>HyperExtensions</td>
+                        <td>Cable Face Pulls</td>
+                        <td>Alternating Bicep Curl</td>
+                        <td>Planks</td>
+                    </tr>
+                    
+                </table>
+
+
+            </div>
+
+
+            <ul class="social">
+                <a href="social-media.html"><img src="instagram.png" alt="" /></a>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

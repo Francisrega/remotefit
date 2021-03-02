@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RemoteFit Landing Page</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo"> RemoteFit</h2>
+                <div class="toggle"></div>
+            </header>
+            
+            <video src="space2.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2> Never Stop </h2>
+                <h1>Always Improve</h1>
+                <p>Exercise is the key to health and longevity. Many people disregard their own physical wellbeing until it is too late. Just by making small changes daily, even weekly, major changes can happen in your life. By doing an hour of exercise a day and feeding your body clean, healthy foods, a person will feel younger, stronger, healthier and more confident than ever. In a time when the world is cautious because of COVID, the best way to fight against the virus is to keep the body as healthy as possible.</p>
+                <a href="explore.html">Video Of The Week</a>
+            </div>
+            <ul class="social">
+                <a href="social-media.html"><img src="instagram.png" alt="" /></a>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

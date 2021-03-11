@@ -50,7 +50,7 @@
     position: relative;
     width: 60px;
     height: 60px;
-    background: url('menu.png');
+    background: url('https://objectstorage.us-ashburn-1.oraclecloud.com/n/id6ku1mq0jl7/b/First_bucket/o/menu.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -59,7 +59,7 @@
 
 
 .toggle.active{
-    background: url('close.png');
+    background: url('https://objectstorage.us-ashburn-1.oraclecloud.com/n/id6ku1mq0jl7/b/First_bucket/o/close.png');
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;

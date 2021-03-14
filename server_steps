@@ -1,0 +1,34 @@
+
+##This goes when using creating the server
+#!/bin/bash
+sudo yum -y
+sudo yum update -y
+bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+sudo yum install git python3 httpd php mariadb -y
+sudo dnf install php-pecl-apcu php-pear php-pdo php-mysqlnd php-pgsql php-gd php-mbstring  php-xml php-fpm
+
+##The above steps where pasted when creating the instances
+##Once SSH into the server
+
+   sudo systemctl enable httpd.service
+   sudo systemctl start httpd
+   sudo systemctl status httpd
+   sudo firewall-cmd --add-service=http --permanent
+   sudo firewall-cmd --reload
+   sudo chown -R apache:apache /var/www/html/
+   sudo systemctl restart httpd
+   sudo systemctl start php-fpm
+   sudo systemctl enable php-fpm
+   sudo systemctl status php-fpm
+   cd /var/www/html/
+   sudo git clone https://github.com/Francisrega/remotefit.git .
+   sudo chown -R apache:apache /var/www/html/
+   
+   
+  ## in order to make updates to the code
+   sudo rm /var/www/html/*
+   sudo rm -rf .git/
+   sudo rm -rf .vscode/
+   sudo git clone https://github.com/Francisrega/remotefit.git .
+   sudo chown -R apache:apache /var/www/html/
+   
